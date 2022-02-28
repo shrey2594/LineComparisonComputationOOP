@@ -8,11 +8,12 @@ namespace LineComparisonProblemOOP
 {
     public class LengthCalculation
     {
-        public void calculateLength(int x1, int y1, int x2, int y2)
+        public double calculateLength(int x1, int y1, int x2, int y2)
         {
-            double sum = Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2);
-            double lineLength = Math.Sqrt(sum);
-            Console.WriteLine("The length of line is:" + lineLength);
+                double sum = Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2);
+                double lineLength = Math.Sqrt(sum);
+                Console.WriteLine("The length of Line is:" + lineLength);
+                return lineLength;
         }
     }
 }
