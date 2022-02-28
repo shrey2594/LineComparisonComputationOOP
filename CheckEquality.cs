@@ -8,7 +8,7 @@ namespace LineComparisonProblemOOP
 {
     public class CheckEquality
     {
-        public void LineEqualityCheck(double length1, double length2)
+        public static void LineEqualityCheck(double length1, double length2)
         {
             if (length1.Equals(length2))
             {
@@ -16,7 +16,8 @@ namespace LineComparisonProblemOOP
             }
             else
             {
-                Console.WriteLine("Line1 is not equal to Line2");
+                LengthComparison lengthComparison = new LengthComparison();
+                lengthComparison.Comparison(length1, length2);
             }
         }
     }
